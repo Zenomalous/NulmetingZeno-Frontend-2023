@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   css: ["@/assets/app.scss"],
+
   modules: [
     [
       "@pinia/nuxt",
@@ -10,9 +11,11 @@ export default defineNuxtConfig({
     ],
     "nuxt-icons"
   ],
+
   imports: {
     dirs: ["stores"],
   },
+
   vite: {
     css: {
       preprocessorOptions: {
@@ -22,5 +25,7 @@ export default defineNuxtConfig({
         },
       },
     },
-  }
+  },
+
+  compatibilityDate: "2024-08-01"
 });
