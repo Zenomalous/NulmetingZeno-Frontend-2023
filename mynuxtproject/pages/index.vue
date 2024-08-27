@@ -6,6 +6,7 @@
 	<p> <nuxt-link to="/count">Go to Count</nuxt-link> </p>
     <p><nuxt-link to="/message/add">Go to Add Message</nuxt-link></p>
     <p><nuxt-link to="/message/read">Go to Read Messages</nuxt-link></p>
+	<p> <nuxt-link to="/testapipage">Go to Test API Page</nuxt-link> </p>
   </div>
 </template>
 

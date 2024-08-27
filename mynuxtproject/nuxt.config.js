@@ -1,3 +1,5 @@
+console.log('API Key in nuxt.config.js:', process.env.API_KEY);
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -45,5 +47,10 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  
+  env: {
+    apiKey: process.env.API_KEY,
   }
+  
 }
