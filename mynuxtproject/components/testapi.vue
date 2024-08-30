@@ -22,7 +22,7 @@ export default {
         url: 'https://86a4h9y007.execute-api.eu-west-1.amazonaws.com/development/echo',
         headers: { 
           'Content-Type': 'application/json', 
-          'x-api-key': process.env.apiKey // Access the API key from process.env
+          'x-api-key': process.env.apiKey
         },
         data : data
       };
