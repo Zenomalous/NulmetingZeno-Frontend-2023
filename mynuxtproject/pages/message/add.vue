@@ -1,10 +1,11 @@
-<template>
-  <div>
-    <h1>Add Message</h1>
-    <input v-model="newMessage" placeholder="Type your message here" />
-    <button @click="addMessage">Add</button>
-    <p><nuxt-link to="/">Back to Index</nuxt-link></p>
-  </div>
+<template lang="pug">
+  div
+    h1 Add Message
+    p This page uses Pug
+    input(v-model="newMessage" placeholder="Type your message here")
+    button(@click="addMessage") Add
+    p
+      nuxt-link(to="/") Back to Index
 </template>
 
 <script>
