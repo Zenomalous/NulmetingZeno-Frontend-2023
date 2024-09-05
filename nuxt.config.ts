@@ -1,4 +1,5 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+console.log('API Key in nuxt.config.js:', process.env.API_KEY);
+
 export default defineNuxtConfig({
   css: ["@/assets/app.scss"],
 
@@ -20,10 +21,15 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData:
-            '@use "@/assets/_breakpoints.scss" as *;',
+          additionalData: '@use "@/assets/_breakpoints.scss" as *;',
         },
       },
+    },
+  },
+
+  runtimeConfig: {
+    public: {
+      apiKey: process.env.API_KEY || '',
     },
   },
 
